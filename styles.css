@@ -1,87 +1,179 @@
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Science Gothic", sans-serif;
+}
+
+p,
+legend,
+button,
+label {
+	font-family: "Rubik", sans-serif;
+}
+
+button {
+	font-size: 1.5em;
+}
+
+#main-wrapper {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 4fr 3fr;
+	gap: 1vw;
+	grid-template-rows: auto auto;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	grid-row: span 2;
+	border: solid black 0.5vw;
+	border-radius: 2vw;
+	padding: 5%;
+}
+
+nav > button {
+	margin: 1em 0 1em 0;
+}
+
+#main-controls {
+	grid-row: span 2;
+	border: solid black 0.5vw;
+	border-radius: 2vw;
+	padding: 5%;
+}
+
+#roll-results {
+	border: solid black 0.5vw;
+	border-radius: 2vw;
+	padding-left: 4vw;
+}
+
+#roll-history {
+	border: solid black 0.5vw;
+	border-radius: 2vw;
+	padding-left: 4vw;
+	padding-right: 1vw;
+}
+
+#roll-history-div {
+	height: 12vw;
+	overflow-y: scroll;
+	scrollbar-width: thin;
+}
+
+#ranger-icon-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 58.75%;
+	top: 85%;
+	height: 7vw;
+	width: 7vw;
+	border: black solid 0.5vw;
+	background-color: white;
+	border-radius: 50%;
+	padding: auto;
+}
+
+#ranger-icon-div > svg {
+	width: 5vw;
+	height: 5vw;
+}
+
 .critical-highest-roll {
-color: gold;
+	color: gold;
 }
 
 .critical-roll {
-color: green;
+	color: green;
 }
 
 .highest-roll {
-color: red;
+	color: red;
 }
 
 .rejected-roll {
-text-decoration: line-through;
+	text-decoration: line-through;
 }
 
 /* Theme styles for SVG icons */
 svg path.red-theme {
-  vertical-align: middle;
-  fill: red;
+	vertical-align: middle;
+	fill: red;
 }
 
 svg path.green-theme {
-  vertical-align: middle;
-  fill: green;
+	vertical-align: middle;
+	fill: green;
 }
 
 svg path.blue-theme {
-  vertical-align: middle;
-  fill: #0000ff;
+	vertical-align: middle;
+	fill: #0000ff;
 }
 
 svg path.violet-theme {
-  vertical-align: middle;
-  fill: #7f00ff;
+	vertical-align: middle;
+	fill: #7f00ff;
 }
 
 svg path.pink-theme {
-  vertical-align: middle;
-  fill: #ff69b4;
+	vertical-align: middle;
+	fill: #ff69b4;
 }
 
 svg path.black-theme {
-  vertical-align: middle;
-  fill: black;
+	vertical-align: middle;
+	fill: black;
 }
 
 svg path.white-theme {
-  vertical-align: middle;
-  fill: white;
-  stroke: black;
-  stroke-width: 5;
+	vertical-align: middle;
+	fill: white;
+	stroke: black;
+	stroke-width: 5;
 }
 
 svg path.grey-theme {
-  vertical-align: middle;
-  fill: grey;
+	vertical-align: middle;
+	fill: grey;
 }
 
 svg path.gold-theme {
-  vertical-align: middle;
-  fill: gold;
+	vertical-align: middle;
+	fill: gold;
 }
 
 svg path.silver-theme {
-  vertical-align: middle;
-  fill: silver;
+	vertical-align: middle;
+	fill: silver;
 }
 
 svg path.bronze-theme {
-  vertical-align: middle;
-  fill: #cd7f32;
+	vertical-align: middle;
+	fill: #cd7f32;
+}
+
+svg.ranger-icon {
+	width: 2em;
+	height: 2em;
 }
 
 #skills-section {
-
-  display: none;
-
+	display: none;
 }
 
 #custom-dice-pool {
-  display: none;
+	display: none;
 }
 
 #create-quick-roll {
-  display: none;
+	display: none;
+}
+
+#instructions-credits-modal {
+	display: none;
 }
